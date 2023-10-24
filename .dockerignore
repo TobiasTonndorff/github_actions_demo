@@ -1,0 +1,9 @@
+.git
+.github
+target
+./*README.md
+.idea
+.gitignore
+./images
+./src/test
+./src/main/resources/

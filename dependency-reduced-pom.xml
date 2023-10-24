@@ -2,9 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>dk.cphbusiness</groupId>
-  <artifactId>javalindemo</artifactId>
+  <artifactId>github-actions-demo</artifactId>
   <version>1.0-SNAPSHOT</version>
   <build>
+    <finalName>app</finalName>
     <plugins>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -36,7 +37,7 @@
         <configuration>
           <transformers>
             <transformer>
-              <mainClass>dk/cphbusiness/Main</mainClass>
+              <mainClass>dk/cphbusiness/rest/P02RoutesDemo</mainClass>
             </transformer>
           </transformers>
           <filters>
@@ -214,7 +215,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>5.9.1</junit.version>
     <javalin.version>5.5.0</javalin.version>
-    <db.name>javalindemo</db.name>
+    <db.name>actionsdemo</db.name>
     <hibernate.version>6.2.4.Final</hibernate.version>
     <maven.compiler.source>17</maven.compiler.source>
     <lombok.version>1.18.28</lombok.version>
