@@ -1,9 +1,0 @@
-.git
-.github
-./README.md
-./CICD.README.md
-.idea
-.gitignore
-./images
-./src/test
-./src/main/resources/
