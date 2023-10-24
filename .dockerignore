@@ -1,6 +1,5 @@
 .git
 .github
-target
 ./README.md
 ./CICD.README.md
 .idea
