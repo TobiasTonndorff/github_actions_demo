@@ -1,0 +1,24 @@
+version: '3.9'
+
+services:
+  api:
+    image: webtrade/ci_cd_javalin_demo:latest
+    container_name: app
+    environment:
+      - CONNECTION_STR=jdbc:postgresql://db:5432/
+      - DB_USERNAME=<DB-PASSWORD>
+      - DB_PASSWORD=<DB-PASSWORD>
+      - DEPLOYED=<DEPLOYMENT>
+      - SECRET_KEY=<YOUR-SECRET-KEY>
+      - TOKEN_EXPIRE_TIME=<TOKEN_EXPIRE_TIME>
+      - ISSUER=<ISSUER>
+    ports:
+      - "7070:7070"
+    networks:
+      - database_network
+
+networks:
+  database_network:
+    name: database_network
+    internal: false
+    driver: bridge
