@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   api:
-    image: webtrade/ci_cd_javalin_demo:latest
+    image: tobiastonndorff/ci_cd_javalin_demo:latest
     container_name: app
     environment:
       - CONNECTION_STR=jdbc:postgresql://db:5432/
@@ -13,7 +13,7 @@ services:
       - TOKEN_EXPIRE_TIME=<TOKEN_EXPIRE_TIME>
       - ISSUER=<ISSUER>
     ports:
-      - "7070:7070"
+      - "7007:7007"
     networks:
       - database_network
 
